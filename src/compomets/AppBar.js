@@ -92,10 +92,10 @@ export default function Appbar() {
           color="inherit"
           onClick={() => {
             if (localStorage.getItem("name")) {
-              navigator("/cart");
+              navigator("/labtopi/cart");
               setMobileMoreAnchorEl(null);
             } else {
-              navigator("/login");
+              navigator("/labtopi/login");
             }
           }}
         >
@@ -115,7 +115,7 @@ export default function Appbar() {
               setMobileMoreAnchorEl(null);
               setOpenDrawer(!openDrawer);
             } else {
-              navigator("/login");
+              navigator("/labtopi/login");
             }
           }}
         >
@@ -154,9 +154,9 @@ export default function Appbar() {
             <IconButton
               onClick={() => {
                 if (localStorage.getItem("name")) {
-                  navigator("/cart");
+                  navigator("/labtopi/cart");
                 } else {
-                  navigator("/login");
+                  navigator("/labtopi/login");
                 }
               }}
               size="large"
@@ -175,7 +175,7 @@ export default function Appbar() {
                 if (localStorage.getItem("name")) {
                   setOpenDrawer(!openDrawer);
                 } else {
-                  navigator("/login");
+                  navigator("/labtopi/login");
                 }
               }}
             >
@@ -238,7 +238,7 @@ function Account() {
         aria-haspopup="true"
         onClick={() => {
           localStorage.clear();
-          navigator("/login");
+          navigator("/labtopi/login");
         }}
         color="inherit"
       >
@@ -266,7 +266,7 @@ function Account() {
       aria-label="account of current user"
       aria-haspopup="true"
       onClick={() => {
-        navigator("/register");
+        navigator("/labtopi/register");
       }}
       color="inherit"
     >

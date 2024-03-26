@@ -41,7 +41,7 @@ function Item({ id, name, image, desc, price }) {
             if (localStorage.getItem("name")) {
               dispatch({ type: TOGGLE_FAV, id });
             } else {
-              navigator("/login");
+              navigator("/labtopi/login");
             }
           }}
           aria-label="add to favorites"
@@ -54,7 +54,7 @@ function Item({ id, name, image, desc, price }) {
             if (localStorage.getItem("name")) {
               dispatch({ type: TOGGLE_ITEM, id, amount: 1 });
             } else {
-              navigator("/login");
+              navigator("/labtopi/login");
             }
           }}
           aria-label="Add to cart"

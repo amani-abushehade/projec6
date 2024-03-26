@@ -22,7 +22,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route
-            path="/"
+            path="/labtopi"
             element={
               <>
                 <Appbar />
@@ -31,7 +31,7 @@ function App() {
             }
           />
           <Route
-            path="/cart/"
+            path="/labtopi/cart/"
             element={
               <>
                 <Appbar /> <Cart />
@@ -39,7 +39,7 @@ function App() {
             }
           />
           <Route
-            path="/login/"
+            path="/labtopi/login/"
             element={
               <>
                 <Login />
@@ -47,7 +47,7 @@ function App() {
             }
           />
           <Route
-            path="/register/"
+            path="/labtopi/register/"
             element={
               <>
                 <Register />

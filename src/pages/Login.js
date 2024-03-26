@@ -50,7 +50,7 @@ function Login() {
               Don't have an account?{" "}
               <strong
                 style={{ color: "#5e548e", cursor: "pointer" }}
-                onClick={() => navigate("/register")}
+                onClick={() => navigate("/labtopi/register")}
               >
                 Register now
               </strong>

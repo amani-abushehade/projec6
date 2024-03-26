@@ -13,7 +13,7 @@ function Register() {
     localStorage.setItem("name", nameRef.current.value);
     localStorage.setItem("email", emailRef.current.value);
     localStorage.setItem("password", passwordRef.current.value);
-    navigate("/login");
+    navigate("/labtopi/login");
   }
   return (
     <div class="wrapper">
@@ -51,7 +51,7 @@ function Register() {
             <h3>
               Already have an account?
               <strong
-                onClick={() => navigate("/login")}
+                onClick={() => navigate("/labtopi/login")}
                 style={{ color: "#5e548e", cursor: "pointer" }}
               >
                 {" "}
